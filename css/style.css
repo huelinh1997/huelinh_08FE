@@ -1,4 +1,104 @@
-p {
-	color: red;
-	font-family: cursive;
+* {
+	margin: 0;
+	padding: 0;
 }
+
+html {
+	background-color: white;
+}
+
+body {
+	font-size: 100%;
+	font-family: "Times New Roman", Times, serif;
+	width: 600px;
+	margin: 0 auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+
+header {
+	border-bottom: 3px solid #931420;
+	padding: 1.5em 0 2em;
+	text-indent: 0;
+	background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, #ffffff 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+header img {
+	float: left;
+	padding: 0 30px 0;
+}
+
+header h2 {
+	font-size: 170%;
+	color: #800000;
+	text-indent: 30px;
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	text-indent: 30px;
+}
+
+a:hover {
+	font-style: italic;
+}
+
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+
+main {
+	clear: left;
+	padding: 0 30px;
+}
+
+main h1 {
+	border-top: 3px solid #931420;
+	border-bottom:3px solid #931420;
+	font-size: 150%;
+	border: 
+	padding: .3em 0;
+	}
+
+main h2 {
+	font-size: 130%;
+	color: #800000;
+	padding: .5em 0 .25em;
+}
+
+main h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+
+main img {
+	padding-bottom: 1em;
+}
+
+main p {
+	padding-bottom: .5em;
+}
+
+main blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+
+main ul {
+	padding: 0 0 .25em 1.25em;
+}
+
+main li {
+	padding-bottom: .35em;
+}
+
+footer p {
+	background-color: #931420;
+	color: white;
+	border-top: 3px solid #931420;
+	border-bottom: 3px solid #931420;
+	text-align: center;
+	padding: 1em 0;
+}
+
