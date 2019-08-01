@@ -49,17 +49,19 @@ a:hover {
 }
 
 .content {
-	clear: left;
 	padding: 0 30px;
 }
 
-.speaker-list {
-	border-top: 3px solid #931420;
-	border-bottom:3px solid #931420;
-	font-size: 150%;
-	border: 
+.speakers-heading {
+	border: 3px double #931420;
+	/* border-bottom:3px double #931420; */
+	border-radius: 8px;
+	box-shadow: 3px 3px 3px 0px black;
+	font-size: 150%;	
 	padding: .3em 0;
-	}
+	margin-bottom: .5em;
+	text-align: center;
+}
 
 .intro-title {
 	font-size: 130%;
@@ -80,7 +82,7 @@ a:hover {
 	padding-bottom: .5em;
 }
 
-blockquote {
+.quote {
 	padding: 0 2em;
 	font-style: italic;
 }
