@@ -140,15 +140,11 @@ a:hover {
 	color: white;
 	font-weight: bold;
 	display: block;
-	border-right: 2px solid white;
+	border-right: 2px solid #fffded;
 }
 
-#nav_menu ul li.lastitem a{
+.nav .lastitem a{
 	border-right: none;
-}
-
-#nav_menu ul li.second-item ul li a{
-  border-right: none;
 }
 
 .nav li{
@@ -156,12 +152,13 @@ a:hover {
 }
 
 .nav .sub-menu{
-   display: none; 
+  display: none; 
   position: absolute;
   top: 0;
+  left: 100%;
   width: 100%;
   background-color: #eee;
-  left: 100%;
+  
 }
 
 #sub-menu-last{
@@ -180,18 +177,10 @@ a:hover {
   display: block;
 }
 
-.sub-menu li a{
-  padding: 10px;
-}
-
 .nav>li>.sub-menu{
   top: 100%;
   left: 0;
 }
 
- .nav li a{
-   line-height: 20px;
-   display: inline-block;
-}
  
  
