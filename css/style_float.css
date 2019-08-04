@@ -9,22 +9,14 @@ html {
 
 body {
 	font-family: "Times New Roman", Times, serif;
-	width: 800px;
+	width: 60%;
 	margin: 0 auto;
 	border: 3px solid #931420;
 	background-color: #fffded;
 }
 
-.section {
-	width: 525px;
-	float: right;
-	padding-bottom: 20px;
-}
-
-.aside {
-	width: 215px;
-	float: left;
-	padding: 0 0 50px 50px;
+a:hover {
+	font-style: italic;
 }
 
 .title {
@@ -36,7 +28,7 @@ body {
 
 .title img {
 	float: left;
-	padding: 0 30px;
+	padding: 0 1.5em;
 }
 
 .title-main {
@@ -51,20 +43,6 @@ body {
 	text-indent: 30px;
 }
 
-a:hover {
-	font-style: italic;
-}
-
-.shadow {
-	text-shadow: 2px 2px 2px #800000;
-}
-
-.post {
-	border-top: 2px solid #800000;
-	border-bottom: 2px solid #800000;
-	margin-right: 1em;
-}
-
 .content h2 {
 	font-size: 130%;
 	color: #800000;
@@ -76,36 +54,84 @@ a:hover {
 	padding-bottom: .25em;
 }
 
-.content section img {
-	float: right;
-	width: 210px;
-	height: 210px;
-}
-
 .content aside img {
 	padding-bottom: 1em;
 }
 
-.content section p {
-	padding-bottom: .5em;
+.aside-1 {
+	width: 40%;
+	float: left;
 }
 
-.quote {
+#inner-aside-1 {
+	padding: 0 0 2.5em 2.5em;
+}
+
+.aside-2 {
+	width: 60%;
+	float: right;
+	padding-bottom: 1em;
+}
+
+.aside-2 ul {
+	padding-left: 1.25em;
+}
+
+.aside-2 ul li {
+	padding-bottom: .35em;
+}
+
+#inner-aside-2 {
+	margin-right: 1.25em;
+}
+
+#inner-aside-2 h2 {
+	padding-top: 0;
+}
+
+.article {
+	width: 60%;
+	float: right;
+}
+
+.inner-article {
+	margin-right: 1.25em;
+	padding-bottom: 1.25em;
+}
+
+.article img {
+	float: right;
+	width: 50%;
+}
+
+.article .post {
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+	padding: .5em 0 1.25em;
+}
+
+.article .quote {
 	padding: 0 2em;
 	font-style: italic;
 }
 
-.content section ul {
-	padding: 0 0 .25em 1.25em;
+.quote:before {
+	content: '\201C';
 }
 
-.content section ul li {
-	padding-bottom: .35em;
+.quote:after {
+	content: '\201D';
 }
+
+
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+
 
 #footer {
 	background-color: #931420;
-	clear: right;
+	clear: both;
 }
 
 .copyright p {
@@ -140,7 +166,7 @@ a:hover {
 	color: white;
 	font-weight: bold;
 	display: block;
-	border-right: 2px solid #fffded;
+	/* border-right: 2px solid #fffded; */
 }
 
 .nav .lastitem a{
