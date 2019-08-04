@@ -8,6 +8,7 @@ html {
 }
 
 body {
+	font-size: 100%;
 	font-family: "Times New Roman", Times, serif;
 	width: 60%;
 	margin: 0 auto;
@@ -65,6 +66,11 @@ a:hover {
 
 #inner-aside-1 {
 	padding: 0 0 2.5em 2.5em;
+}
+
+.aside-1 img {
+	max-width: 40%;
+	height: auto;
 }
 
 .aside-2 {
@@ -208,5 +214,65 @@ a:hover {
   left: 0;
 }
 
- 
- 
+@media screen and (max-width: 480px) {
+	.title img {
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+
+	.title-main{
+		text-align: center;
+		font-size: 120%;
+		text-indent: unset;
+	}
+
+	.title-sub {
+		text-align: center;
+		font-size: 100%;
+		text-indent: unset;
+	}
+
+	.aside-1 {
+		width: 100%;
+	}
+
+	.aside-1 h2, h3 {
+		text-align: center;
+	}
+
+	#inner-aside-1 {
+		padding: 0;
+	}
+	
+	.speakers {
+		width: 25%;
+		float: left;
+	}
+	
+	.speakers img {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.aside-2 {
+		width: 100%;
+		text-align: center;
+	}
+
+	#inner-aside-2 {
+		display: inline-block;
+	}
+
+	.article {
+		width: 100%;
+	}
+
+	.article h1, h2 {
+		text-align: center;
+	}
+
+	.inner-article {
+		margin: 0 1em;
+	}
+}
