@@ -250,8 +250,14 @@ a:hover {
 		flex-direction: column; 
 	}
 
-	 .container-speakers {
+	.container-speakers {
 		display: flex;
+		flex: wrap;
+	}
+
+	.speakers {
+		flex: 25%;
+		align-items: stretch;
 	}
 	
 	.aside-1 {
