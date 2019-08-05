@@ -5,14 +5,16 @@
 	<meta name="viewport" content="width=width-device, initial-scale=1">
 	<title>FLoat_navigation</title>
 	<link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
-	<link rel="stylesheet" type="text/css" href="../css/style_float.css">
+	<link rel="stylesheet" type="text/css" href="../css/flexbox_style.css">
 </head>
 <body>
 	<!-- Header -->
 	<HEADER	class="title">
 		<img src="../img/logo.gif" alt="logo" style="width: 70px; height: 70px;">
-		<h2 class="title-main">San Joaquin Valley Town Hall</h2>
-		<h3 class="title-sub">Celebrating our <em class="shadow">75<sup>th</sup></em> Year</h3>
+		<div class="container">
+			<h2 class="title-main">San Joaquin Valley Town Hall</h2>
+			<h3 class="title-sub">Celebrating our <em class="shadow">75<sup>th</sup></em> Year</h3>
+		</div>
 	</HEADER>
 
 	<!-- Navigation -->
@@ -56,8 +58,8 @@
 	<main class="content">
 		<!-- aside  -->
 		<aside class="aside-1">
-			<div id="inner-aside-1">
-				<h2>Guest speakers</h2>
+			<h2>Guest speakers</h2>
+			<div class="container-speakers">
 				<div class="speakers">
 					<h3>October<br><a href="../speakers/toobin.html">Jeffrey Toobin</a></h3>
 					<img src="../img/toobin75.jpg" alt="Jeffrey Toobin img">
@@ -74,44 +76,42 @@
 				</div>
 				
 				<div class="speakers">
-					<h3>January<br><a href="../speakers/sampson.html">Scott Sampson</a></h3>
+					<h3>December<br><a href="../speakers/sampson.html">Scott Sampson</a></h3>
 					<img src="../img/sampson75.jpg" alt="scott sampson img">
 				</div>
 			</div>
 		</aside>
 
-		<!-- article-one -->
-		<article class="article">
-			<div class="inner-article">
-				<h2>Our Mission</h2>
-				<p>San Joaquin Valley Town Hall is non-profit organization that is run by an all-volunteer board of directors. Our mission is audience! As one or our members told us:</p>
-				<blockquote class="quote">Each year I give a ticket package to each of our family members. I think of it as the gift of knowledge... and that is priceless.</blockquote>
-			</div>
-		</article>
+		<div class="content-right">
+				<!-- article-one -->
+			<article class="article" style="order: 2">	
+				<div class="post-1">
+					<h2>Our Mission</h2>
+					<p>San Joaquin Valley Town Hall is non-profit organization that is run by an all-volunteer board of directors. Our mission is audience! As one or our members told us:</p>
+					<blockquote class="quote">Each year I give a ticket package to each of our family members. I think of it as the gift of knowledge... and that is priceless.</blockquote>
+				</div>	
+			</article>
 
-		<!-- article-two -->
-		<article class="article">
-			<div class="inner-article">
+			<!-- article-two -->
+			<article class="article" style="order: 3">
 				<h1>Speaker of the Month</h1>
-				<div class="post">
+				<div class="post-2">
 					<h2>Fossil Threads in the Web of Life</h2>
 					<img src="../img/sampson.jpg" alt="sampson with dinosaur">
 					<p><b>February<br>Scott Sampson<br></b>What's 75 milion years old and brand spanking new? A teenage Utahceratops! Come to the Saroyan, armed with your best dinosaur roar, When Scott Sampson, Research Curator at the Utah Museum of Natural History, steps to the podium. Sampson's research has focused on the ecology and evolution of late Cretaceous dinosaurs and he has conducted fieldwork in a number of countries in Africa. <br><a href="#">Read more</a><b>&nbsp;Or meet us there!</b></p>
-				</div>
-			</div>
-		</article>
+				</div>	
+			</article>
 
-		<!-- aside-two -->
-		<aside class="aside-2">
-			<div id="inner-aside-2">
+			<!-- aside-two -->
+			<aside class="aside-2" style="order: 1">
 				<h2>Our Ticket packages</h2>
 				<ul>
 					<li>Season package: 595</li>
 					<li>Patron Package: 5200</li>
 					<li>Single Speaker: 525</li>
 				</ul>
-			</div>
-		</aside>
+			</aside>
+		</div>
 
 		
 	</main>
