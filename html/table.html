@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=width-device, initial-scale=1">
+	<title>Table</title>
+	<link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="../css/table_style.css">
+</head>
+<body>
+	<!-- Header -->
+	<HEADER	class="title">
+		<img src="../img/logo.gif" alt="logo" style="width: 70px; height: 70px;">
+		<div class="container">
+			<h2 class="title-main">San Joaquin Valley Town Hall</h2>
+			<h3 class="title-sub">Celebrating our <em class="shadow">75<sup>th</sup></em> Year</h3>
+		</div>
+	</HEADER>
+
+	<!-- Navigation -->
+	<nav id="nav_menu">
+    <ul class="nav">
+      <li><a href="nav.html">Home</a></li>
+      <li class="second-item"><a href="#">Speakers</a>
+        <ul class="sub-menu">
+          <li><a href="../speakers/toobin.html">Jeffrey Toobin</a></li>
+          <li><a href="../speakers/sorkin.html">Andrew Sorkin</a></li>
+          <li><a href="../speakers/amychua.html">Amy Chua</a></li>
+          <li><a href="../speakers/sampson.html">Scott Sampson</a>
+            <ul class="sub-menu">
+              <li><a href="#">September 2013</a></li>
+              <li><a href="#">February 2018</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Carlos Eire</a></li>
+          <li><a href="#">Roman Tynan</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="current">Become a member</a></li>
+      <li class="lastitem"><a href="#">About Us</a>
+        <ul class="sub-menu">
+          <li><a href="#">Our History</a></li>
+          <li><a href="#">Board of directors</a></li>
+          <li><a href="#">Past Speakers</a>
+            <ul id="sub-menu-last">
+              <li><a href="#">2017</a></li>
+              <li><a href="#">2016</a></li>
+              <li><a href="#">2015</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact information</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+	<!-- main --> 
+	<main class="content">
+		<!-- aside  -->
+		<aside class="aside-1">
+			<h2>Guest speakers</h2>
+			<div class="container-speakers">
+				<div class="speakers">
+					<h3>October<br><a href="../speakers/toobin.html">Jeffrey Toobin</a></h3>
+					<img src="../img/toobin75.jpg" alt="Jeffrey Toobin img">
+				</div>
+
+				<div class="speakers">
+					<h3>November<br><a href="../speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+					<img src="../img/sorkin75.jpg" alt="Andrew Ross Sorkin img">
+				</div>
+
+				<div class="speakers">
+					<h3>January<br><a href="../speakers/amychua.html">Amy Chua</a></h3>
+					<img src="../img/amychua75.jpg" alt="amy chua img">
+				</div>
+				
+				<div class="speakers">
+					<h3>December<br><a href="../speakers/sampson.html">Scott Sampson</a></h3>
+					<img src="../img/sampson75.jpg" alt="scott sampson img">
+				</div>
+			</div>
+		</aside>
+
+		<div class="content-right">
+				<!-- article-one -->
+			<article class="article" style="order: 2">	
+				<div class="post-1">
+					<h2>Our Mission</h2>
+					<p>San Joaquin Valley Town Hall is non-profit organization that is run by an all-volunteer board of directors. Our mission is audience! As one or our members told us:</p>
+					<blockquote class="quote">Each year I give a ticket package to each of our family members. I think of it as the gift of knowledge... and that is priceless.</blockquote>
+				</div>	
+			</article>
+
+			<!-- article-two -->
+			<article class="article" style="order: 3">
+				<h2>The luncheon schedule</h2>
+					<table>
+						<thead>
+							<tr>
+								<th>Year</th>
+								<th>Date</th>
+								<th>Speaker</th>
+								<th>Cost</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td rowspan="2">2017</td>
+								<td>October 19</td>
+								<td>Jeffrey Toobin</td>
+								<td>$25</td>
+							</tr>
+							<tr >
+								<td>November 2016</td>
+								<td>Andress Ross Sorkin</td>
+								<td>$25</td>
+							</tr>
+							<tr class="line1">
+								<td rowspan="4" >2018</td>
+								<td>January 18</td>
+								<td>Amy Chua</td>
+								<td>$25</td>
+							</tr>
+							<tr>
+								<td>February 16</td>
+								<td>Scott Sampson</td>
+								<td>$25</td>
+							</tr>
+							<tr>
+								<td>March 21</td>
+								<td>Carlos Eire</td>
+								<td>$25</td>
+							</tr>
+							<tr class="line2">
+								<td>April 18</td>
+								<td>Ronan Tynan</td>
+								<td>$25</td>
+							</tr>
+							<tr class="right">
+								<td colspan="3">Cost of 6 individual luncheon tickets</td>
+								<td >$150</td>
+							</tr>
+							<tr class="right">
+								<td colspan="3">Cost of 6 individual luncheon tickets</td>
+								<td >$150</td>
+							</tr>
+						</tbody>
+						<tfoot>
+							<td colspan="3">Savings</td>
+							<td >$30</td>
+						</tfoot>
+					</table>
+				
+			</article>
+
+			<!-- aside-two -->
+			<aside class="aside-2" style="order: 1">
+				<h2>Our Ticket packages</h2>
+				<ul>
+					<li>Season package: 595</li>
+					<li>Patron Package: 5200</li>
+					<li>Single Speaker: 525</li>
+				</ul>
+			</aside>
+		</div>
+
+		
+	</main>
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="copyright">
+			<p>&copy;&nbsp;2018, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+		</div>
+	</footer>
+</body>
+</html>

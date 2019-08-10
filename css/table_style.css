@@ -4,12 +4,8 @@
 	box-sizing: border-box;
 }
 
-html {
-	background-color: white;
-}
-
 body {
-	font-size: 100%;
+	font-size: 110%;
 	font-family: "Times New Roman", Times, serif;
 	width: 60%;
 	margin: 0 auto;
@@ -145,6 +141,7 @@ a:hover {
 /* css for aside-1 */
 .aside-1 {
 	padding: 0 1em 2em 1.5em;
+	 flex: 90%; 
 }
 
 .aside-1 h3 {
@@ -169,23 +166,6 @@ a:hover {
 	padding-bottom: 1.25em;
 }
 
-.article img {
-	float: right;
-	width: 50%;
-	height: auto;
-	padding: 0 1em;
-}
-
-.article h1 {
-	padding-bottom: .5em;
-}
-
-.article .post-2 {
-	border-top: 2px solid #800000;
-	border-bottom: 2px solid #800000;
-	padding: .5em 0 1.25em;
-}
-
 .article .quote {
 	padding: 0 2em;
 	font-style: italic;
@@ -198,6 +178,46 @@ a:hover {
 .quote:after {
 	content: '\201D';
 }
+
+/* Css for table */
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: .2em .7em;
+}
+
+
+thead th {
+	border-top: 2px solid #931420;
+	border-bottom: 2px solid #931420;
+} 
+
+
+tfoot td {
+	border-top: 2px solid #931420;
+	border-bottom: 2px solid #931420;
+}
+
+.line1 td:nth-child(n) {
+	border-top: 2px solid #931420;
+}
+
+.line2 td:nth-child(n), .line1 td:first-child {
+	border-bottom: 2px solid #931420;
+} 
+
+.right td:first-child, tfoot td:first-child {
+	text-align: right;
+	font-weight: bold;
+}
+
+tfoot td:last-child {
+	font-weight: bold;
+}
+
+
 /* css for aside-2 */
 .aside-2 {
 	padding-bottom: 1em;
@@ -282,4 +302,5 @@ a:hover {
 	.aside-2 {
 		margin: 0 auto;
 	}
-} 
+}  
+ 
