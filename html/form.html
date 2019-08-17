@@ -7,20 +7,103 @@
 </head>
 <body>
 	<form>
-		<label for="firstname">First name:</label>
-		<input type="text" name="firstname" id="firstname" autofocus> <br>
-		<label for="lastname">Last name:</label>
-		<input type="text" name="lastname" id="lastname"> <br>
-		<label for="address">Address:</label>
-		<input type="text" name="address" id="address"> <br>
-		<label for="city">City:</label>
-		<input type="text" name="city" id="city"> <br>
-		<label for="state">State:</label>
-		<input type="text" name="state" id="state"> <br>
-		<label for="zip">Zip code:</label>
-		<input type="text" name="zip" id="zip"> <br>
-		<input type="submit" name="register" id="button" value="Register">
-		<input type="reset" name="reset" id="reset">
+		<fieldset>
+			<legend>Member Informations</legend>
+			<label for="email">Email:</label>
+			<input type="email" name="email" id="email" autofocus required><br>
+			<label for="first_name">First name:</label>
+			<input type="text" name="first_name" id="first_name" required><br>
+			<label for="last_name">Last name:</label>
+			<input type="text" name="last_name" id="lastname" required><br>
+			<label for="address">Address:</label>
+			<input type="text" name="address" id="address"> <br>
+			<label for="city">City:</label>
+			<input type="text" name="city" id="city" required><br>
+			<label for="state">State:</label>
+			<input type="text" name="state" id="state" maxlength="2" required placeholder="2-character code"><br>
+			<label for="zip">Zip code:</label>
+			<input type="text" name="zip" id="zip" required placeholder="5 or 9 digits" pattern="^\d{5}(-\d{4})?$" title="Either 5 or 9 digits"><br>
+			<label for="phone">Phone Number:</label>
+			<input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999 format"><br>
+		</fieldset>
+
+		<fieldset>
+			<legend>Ordering Information</legend>
+			<label for="order_type">Order Type:</label>
+			<select name="order_type" id="order_type">
+				<option value="member">Member Package</option>
+				<option value="donor">Donor Package</option>
+				<option value="single">Single Ticket</option>
+			</select><br>
+			<label for="num">Number of Tickets:</label>
+			<input type="number" name="num" id="num" placeholder="Number of single tickets"> <br>
+		</fieldset>
+
+		<fieldset id="payment">
+			<legend>Payment Method</legend>
+			<input type="radio" name="method" id="method1" value="bill">
+			<label for="method1">Bill Me</label> 
+			<input type="radio" name="method" id="method2" value="credit">
+			<label for="method2">Credit Card</label>
+		</fieldset>	
+
+		<fieldset>
+			<legend>Credit Card Information</legend>
+			<label for="cardType">Card Type:</label>
+			<select>
+				<option selected>Visa</option>
+				<option>MasterCard</option>
+				<option>Discover</option>
+			</select> <br>
+			<label for="cardNum">Card Number:</label>
+			<input type="text" name="cardNum" id="cardNum" placeholder="16 digits" pattern="\d{16}" required><br>
+			<label for="expDate">Expiration date:</label>
+			<select id="expDate">
+				<option>January</option>
+				<option>February</option>
+				<option>March</option>
+				<option>April</option>
+				<option>May</option>
+				<option>June</option>
+				<option>July</option>
+				<option>August</option>
+				<option>September</option>
+				<option>October</option>
+				<option>November</option>
+				<option>December</option>
+			</select>
+			<select id="year">
+				<option>2017</option>
+				<option>2018</option>
+				<option>2019</option>
+				<option>2020</option>
+				<option>2021</option>
+			</select>
+		</fieldset>	
+
+		<fieldset id="button">
+			<legend>Submit your Order:</legend>
+			<label>&nbsp;</label>
+			<input type="submit" name="register" id="button" class="submit" value="Submit">
+			<input type="reset" name="reset" id="button" value="Reset Fields">
+		</fieldset>
 	</form>
+
+<!-- 	<form name="ordering">
+	
+</form>
+
+<form name="payment" id=payment>
+	
+</form>
+
+<form name="creditCard" id=creditCard>
+	
+</form>
+
+<form>
+	
+</form> -->
+
 </body>
 </html>

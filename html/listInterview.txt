@@ -1,0 +1,132 @@
+HTML
+1. Ý nghĩa của thẻ DOCTYPE!
+	Doctype không phải là một tag HTML, ! Doctype chỉ cho trình duyệt web biết được phiên bản ngôn ngữ đánh dấu (markup language) nào được sử dụng trong trang web.
+
+2. Các tag cấu trúc HTML5, ý nghĩa các tag đó?
+- Semantic element là những phần tử mô tả rõ ràng ý nghĩa về cấu trúc của phần tử đó đối với các trình duyệt và lập trình viên. Nói một cách dễ hiểu hơn có nghĩa là chỉ cần đọc tên các element này là chúng ta có thể hiểu được nội dung bên trong element này nói về cái gì.
+- Ví dụ về phần tử non-semantic (phần tử không có ngữ nghĩa): <div> và <span> – Không có mô tả rõ ràng về nội dung bên trong phần tử.
+- Ví dụ về phần tử semantic (phần tử có ngữ nghĩa) : <form>, <table>, và <img> – Đưa ra các mô tả rõ ràng về nội dung bên trong phần tử .
+- Dưới đây, HTML5 cung cấp các phần tử semantic mới để xác định từng phần khác nhau của một trang web:
+- <article> Xác định một bài viết/bài báo
+			( Element <article> được sử dụng cho các nội dung độc lập và chứa nội dung của riêng nó. 
+              Nội dung bên trong <article> có ý nghĩa riêng biệt và có thể độc lập với các nội dung khác của trang web.
+			  Ví dụ: một số nơi bạn có thể sử dụng <article>: 
+			  + Bài viết trên một Forum. 
+			  + Bài viết trên một Blog. 
+			  + Bài viết trên một tờ báo. )
+
+- <aside>		Xác định nội dung nằm bên cạnh nội dung của trang.
+				( Nội dung bên trong <aside> liên quan tới nội dung chính.)
+
+- <details>		Xác định các chi tiết mà người dùng có thể xem hoặc ẩn
+
+- <figcaption>  Chú thích cho thẻ <figure>
+
+- <figure>   	Đánh dấu nội dung ảnh trong tài liệu
+
+				<figcaption>, <figure> giải thích rõ nghĩa thêm cho bức ảnh được thêm vào
+				Tương tự như các chú thích/ghi chú bên dưới tranh ảnh trong các bài báo, sách truyện.
+				Trong HTML5, hình ảnh và các ghi chú trong <figcaption> có thể được đặt cùng nhau bên trong yếu tố <figure>.
+
+- <footer>	Xác định phần cuối của một trang tài liệu hay phần cuối của một đoạn.
+			(Thường chứa thông tin tác giả của tài liệu, thông tin bản quyền, liên kết đến điều khoản sử dụng, thông tin liên hệ… )
+
+- <header> 	Xác định phần đầu của một trang tài liệu hay phần đầu của một đoạn. 
+			( Nó được sử dụng như một containter chứa nội dung giới thiệu hoặc mở đầu.
+			Bạn có thể sử dụng một hoặc nhiều phần tử <header> trong một tài liệu.)
+
+- <main>	Chỉ định các nội dung chính của một tài liệu
+
+- <mark>	Xác định vùng đánh dấu/làm nổi bật văn bản
+
+- <nav>		Xác định một khu vực chứa các link điều hướng.
+			(Tuy nhiên, ko phải tất cả các liên kết điều hướg trog một tài liệu cần đặt trong <nav>)
+
+- <section> 	Xác định một phần trong tài liệu
+				(Đại diện cho một phần chung có trong tài liệu hoặc ứng dụng, 
+            	Cụ thể hơn, một section là một nhóm các nội dung có cùng chủ đề.)
+
+- <summary>		Hiển thị tiêu đề cho phần tử <details>
+
+- <time>		Xác định ngày/giờ
+
+3. Inline tag và block tag
+	- Block là những thẻ tự động tạo một dòng mới ở đầu và ở cuối của thẻ khi hiển thị trên trình duyệt. Ví dụ như thẻ: <h1>, <p>, <ul>, <table>
+	- Inline là những thẻ hiển nội dung trên cùng một dòng (không tạo ra dòng mới, không xuống dòng). Ví dụ như thẻ: <b>, <td>, <a>, <img>, <span>
+
+4. Inline & inline block
+- display: inline
+  + Với kiểu này thì các item sẽ nằm trên cùng một dòng, ví dụ như <span> . Nếu các items vượt quá độ dài của dòng thì item sẽ xuống dòng mới
+  + Các item có kiểu display này không thể set width và height.
+  + Các inline item sẽ chỉ có thể điều chỉnh margin và padding left and right (top và bottom thì không thể). 
+
+- display: block
+  + Khác với kiểu display: inline thì các item có kiểu display: block luôn được xuống dòng và chiếm toàn bộ width nếu width không được set.
+  + Các item có kiểu display: block sẽ set được width, height, margin, padding đầy đủ 4 hướng (top, bottom, right, left).
+
+- display: inline-block
+  + Kiểu display: inline-block sẽ được sắp xếp giống với kiểu display: inline, nghĩa là các items sẽ được xếp cùng nhau trên một dòng . Tuy nhiên các items sẽ có thuộc tính của display: block như là có set width, height, margin, padding đủ 4 hướng.
+  + Kiểu display này sẽ thường được sử dụng để tạo thanh navbar.
+
+5. Sự khác nhau giữa atribute id và class?
+- ID: Mỗi tag có một id riêng biệt, không được trùng nhau (mặc dù mình vẫn có thể khai báo trùng, nhưng sẽ gặp rắc rối khi sử dụng selector bẳng id trùng đó).
+- Class: Quy định thuộc tính chung cho một nhóm đối tượng, có thể trùng nhau để khai báo các thuộc tính giống nhau.
+
+
+
+CSS
+1. Các cách nhúng css vào html, ưu nhược các cách đó?
+	CSS can be added to HTML elements in 3 ways:
+	- Inline - by using the style attribute in HTML elements
+	- Internal - by using a <style> element in the <head> section
+	- External - by using an external CSS file
+
+2. Mô tả float và cách nó làm viec?
+- Thuộc tính float có tác dụng đẩy phần tử sang bên trái hoặc bên phải.
+- Nó thường được áp dụng vào việc thiết kế bố cục của trang web (Layout)
+- Cu phap: float: left | right | none | inherit;
+	Trong đó:
+		- left: đẩy phần tử sang bên trái
+		- right: đẩy phần tử sang bên phải
+		- none: không thiết lập thuộc tính float (mặc định)
+		- inherit: kế thừa giá trị thuộc tính float của phần tử chứa nó
+- Nguyên lý hoạt động của thuộc tính float
+ 	Nguyên lý 1: Khi một phần tử được thiết lập thuộc tính float:
+		Nó sẽ được bắt đầu ở hàng phía trên , nếu hàng phía trên còn đủ chỗ trống để chứa nó.
+		Nó sẽ được bắt đầu ở hàng mới, nếu hàng phía trên không đủ chỗ trống để chứa nó 
+		Lưu ý: Nếu một phần tử được thiết lập thuộc tính float mà trong khi phần tử đứng trước nó không được thiết lập thuộc tính float, thì mặc định nó được bắt đầu ở hàng mới
+
+ 	Nguyên lý 2:
+		Theo nguyên lý 1 chúng ta biết rằng: khi hàng không đủ chỗ chứa phần tử thì phần tử phải bắt đầu ở hàng mới. Tuy nhiên, cách bắt đầu như thế nào mới là quan trọng.
+
+		Khi trên một hàng có nhiều phần tử được thiết lập thuộc tính float và mỗi phần tử có chiều cao khác nhau, nếu hàng không đủ chỗ chứa phần tử thì phần tử sẽ bắt đầu bên cạnh phần tử có chiều cao thấp nhất và còn đủ khoảng trống để chứa nó
+
+	Tắt sự ảnh hưởng của thuộc tính float
+		Nếu một phần tử được thiết lập thuộc tính float, trong khi phần tử nằm phía sau nó không được thiết lập thuộc tính float, thì khi đó phần tử nằm phía sau sẽ bị tác động xấu bởi thuộc tính float
+
+		Để khắc phục vấn đề này, ta thêm thuộc tính clear vào phần tử phía sau theo cú pháp:
+		clear: none | left | right | both | inherit;
+		Trong đó:
+			none: cho phép phần tử chịu sự ảnh hưởng của thuộc tính float
+			left: không bị ảnh hưởng bởi thuộc tính float left
+			right: không bị ảnh hưởng bởi thuộc tính float right
+			both: không bị ảnh hưởng bởi thuộc tính float
+			inherit: kế thừa giá trị thuộc tính clear của phần tử chứa nó
+
+3. Khác nhau giữa relative, fixed, absolute
+	- position:relative của một phần tử liên quan đến vị trí hiện tại của nó mà không thay đổi bố cục xung quanh vị trí đó
+	- Trong khi position:absolute của một phần tử liên quan đến vị trí của bố mẹ và thay đổi bố cục xung quanh vị trí đó.
+	- position: static
+	  Theo mặc định, định vị một phần tử dựa trên vị trí hiện tại của nó trong luồng. Các thuộc tính top,right,left.bottom và z-index không áp dụng.
+
+4. @media là gì? Cách , ý nghĩa sử dụng?
+	@media CSS là một tính năng mới của CSS3, tính năng này cho phép ta tùy chỉnh CSS cho nhiều thiết bị khác nhau từ máy tính cho đến điện thoại smart phone và các thiết bị in ấn. 
+
+5. Su khác nhau giữa Float, Flex, Grid
+   Float: Đơn giản, dễ sử dụng, thường dùng khi muốn thiết kế các bố cục đơn giản, tuy nhiên ko thể chia layout cho những phần có bố cục phức tạp.
+
+   Flex: được tạo ra để tạo layout một chiều
+   		Điều này có nghĩa là nếu bạn đang tạo layout cho 1 chiều (ví dụ như 3 button bên trong 1 header) - chiều ngang, thì bạn nên sử dụng Flexbox. 	
+   		Trong trường hợp trên thì Flex sẽ giúp code của bạn linh hoạt hơn trong cách style và cũng sẽ dễ maintain hơn nếu về sau có phải điều chỉnh gì.
+
+   	Grid: nếu bạn định tạo ra một layout ở cả 2 chiều - với cả dọc và ngang - thì chắc chắn bạn nên dùng Grid. Trong trường hợp này thì CSS Grid sẽ giúp cho đoạn markup của bạn đơn giản hơn, dễ quản lý code hơn.

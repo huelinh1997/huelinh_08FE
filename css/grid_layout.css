@@ -25,10 +25,25 @@
 	background-color: #9e9e9e;	
 }
 
+.header .nav {
+	background-color: white;
+}
+
+.listitem { 
+	list-style-type: none;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-gap: 10px;
+	 
+}
+
+ul li {
+	background-color: #9e9e9e;
+}
+
 .intro {
 	background-color: #9e9e9e; 
-	padding: .5em;
-	
+	padding: .5em;	
 }
 
  .content {

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Example Bootstrap</title>
+	<link rel="shortcut icon" type="image/png" href="../img/favicon.png"/>
+	<link rel="stylesheet" type="text/css" href="../css/form_in_page.css">
+
+</head>
+
+<body>
+	<!-- Header -->
+	<HEADER	class="title">
+		<img src="../img/logo.gif" alt="logo" style="width: 70px; height: 70px;">
+		<div class="container">
+			<h2 class="title-main">San Joaquin Valley Town Hall</h2>
+			<h3 class="title-sub">Celebrating our <em class="shadow">75<sup>th</sup></em> Year</h3>
+		</div>
+	</HEADER>
+
+	<!-- Navigation -->
+	<nav id="nav_menu">
+    <ul class="nav">
+      <li><a href="nav.html">Home</a></li>
+      <li class="second-item"><a href="#">Speakers</a>
+        <ul class="sub-menu">
+          <li><a href="../speakers/toobin.html">Jeffrey Toobin</a></li>
+          <li><a href="../speakers/sorkin.html">Andrew Sorkin</a></li>
+          <li><a href="../speakers/amychua.html">Amy Chua</a></li>
+          <li><a href="../speakers/sampson.html">Scott Sampson</a>
+            <ul class="sub-menu">
+              <li><a href="#">September 2013</a></li>
+              <li><a href="#">February 2018</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Carlos Eire</a></li>
+          <li><a href="#">Roman Tynan</a></li>
+        </ul>
+      </li>
+      <li><a href="#" class="current">Become a member</a></li>
+      <li class="lastitem"><a href="#">About Us</a>
+        <ul class="sub-menu">
+          <li><a href="#">Our History</a></li>
+          <li><a href="#">Board of directors</a></li>
+          <li><a href="#">Past Speakers</a>
+            <ul id="sub-menu-last">
+              <li><a href="#">2017</a></li>
+              <li><a href="#">2016</a></li>
+              <li><a href="#">2015</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Contact information</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+
+	<!-- main --> 
+	<main class="content">
+		<!-- aside  -->
+		<aside class="aside-1">
+			<h2>Guest speakers</h2>
+			<div class="container-speakers">
+				<div class="speakers">
+					<h3>October<br><a href="../speakers/toobin.html">Jeffrey Toobin</a></h3>
+					<img src="../img/toobin75.jpg" alt="Jeffrey Toobin img">
+				</div>
+
+				<div class="speakers">
+					<h3>November<br><a href="../speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+					<img src="../img/sorkin75.jpg" alt="Andrew Ross Sorkin img">
+				</div>
+
+				<div class="speakers">
+					<h3>January<br><a href="../speakers/amychua.html">Amy Chua</a></h3>
+					<img src="../img/amychua75.jpg" alt="amy chua img">
+				</div>
+				
+				<div class="speakers">
+					<h3>December<br><a href="../speakers/sampson.html">Scott Sampson</a></h3>
+					<img src="../img/sampson75.jpg" alt="scott sampson img">
+				</div>
+			</div>
+		</aside>
+
+		<div class="content-right">
+				<!-- article-one -->
+			<article class="article" style="order: 2">	
+				<div class="post-1">
+					<h2>Our Mission</h2>
+					<p>San Joaquin Valley Town Hall is non-profit organization that is run by an all-volunteer board of directors. Our mission is audience! As one or our members told us:</p>
+					<blockquote class="quote">Each year I give a ticket package to each of our family members. I think of it as the gift of knowledge... and that is priceless.</blockquote>
+				</div>	
+			</article>
+
+			<!-- article-two -->
+			<article class="article" style="order: 3">
+				<h2>The luncheon schedule</h2>
+				<form>
+					<fieldset>
+						<legend>Member Informations</legend>
+						<label for="email">Email:</label>
+						<input type="email" name="email" id="email" autofocus required><br>
+						<label for="first_name">First name:</label>
+						<input type="text" name="first_name" id="first_name" required><br>
+						<label for="last_name">Last name:</label>
+						<input type="text" name="last_name" id="lastname" required><br>
+						<label for="address">Address:</label>
+						<input type="text" name="address" id="address"> <br>
+						<label for="city">City:</label>
+						<input type="text" name="city" id="city" required><br>
+						<label for="state">State:</label>
+						<input type="text" name="state" id="state" maxlength="2" required placeholder="2-character code"><br>
+						<label for="zip">Zip code:</label>
+						<input type="text" name="zip" id="zip" required placeholder="5 or 9 digits" pattern="^\d{5}(-\d{4})?$" title="Either 5 or 9 digits"><br>
+						<label for="phone">Phone Number:</label>
+						<input type="tel" name="phone" id="phone" placeholder="999-999-9999" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Must be 999-999-9999 format"><br>
+					</fieldset>
+
+					<fieldset>
+						<legend>Ordering Information</legend>
+						<label for="order_type">Order Type:</label>
+						<select name="order_type" id="order_type">
+							<option value="member">Member Package</option>
+							<option value="donor">Donor Package</option>
+							<option value="single">Single Ticket</option>
+						</select><br>
+						<label for="num">Number of Tickets:</label>
+						<input type="number" name="num" id="num" placeholder="Number of single tickets"> <br>
+					</fieldset>
+
+					<fieldset id="payment">
+						<legend>Payment Method</legend>
+						<input type="radio" name="method" id="method1" value="bill">
+						<label for="method1">Bill Me</label> 
+						<input type="radio" name="method" id="method2" value="credit">
+						<label for="method2">Credit Card</label>
+					</fieldset>	
+
+					<fieldset>
+						<legend>Credit Card Information</legend>
+						<label for="cardType">Card Type:</label>
+						<select>
+							<option selected>Visa</option>
+							<option>MasterCard</option>
+							<option>Discover</option>
+						</select> <br>
+						<label for="cardNum">Card Number:</label>
+						<input type="text" name="cardNum" id="cardNum" placeholder="16 digits" pattern="\d{16}" required><br>
+						<label for="expDate">Expiration date:</label>
+						<select id="expDate">
+							<option>January</option>
+							<option>February</option>
+							<option>March</option>
+							<option>April</option>
+							<option>May</option>
+							<option>June</option>
+							<option>July</option>
+							<option>August</option>
+							<option>September</option>
+							<option>October</option>
+							<option>November</option>
+							<option>December</option>
+						</select>
+						<select id="year">
+							<option>2017</option>
+							<option>2018</option>
+							<option>2019</option>
+							<option>2020</option>
+							<option>2021</option>
+						</select>
+					</fieldset>	
+
+					<fieldset id="button">
+						<legend>Submit your Order:</legend>
+						<label>&nbsp;</label>
+						<input type="submit" name="register" id="button" class="submit" value="Submit">
+						<input type="reset" name="reset" id="button" value="Reset Fields">
+					</fieldset>
+				</form>
+				
+			</article>
+
+			<!-- aside-two -->
+			<aside class="aside-2" style="order: 1">
+				<h2>Our Ticket packages</h2>
+				<ul>
+					<li>Season package: 595</li>
+					<li>Patron Package: 5200</li>
+					<li>Single Speaker: 525</li>
+				</ul>
+			</aside>
+		</div>
+
+		
+	</main>
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="copyright">
+			<p>&copy;&nbsp;2018, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+		</div>
+	</footer>
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+
+</body>
+</html>
